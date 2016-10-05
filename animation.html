@@ -5,18 +5,26 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <svg width="100%" height="100%" viewBox="0 0 200 100">
-      <circle cx="100" cy="40" r="40" fill="white"/>
+    <svg width="100%" height="100%" viewBox="0 0 1000 800">
+      <circle cx="400" cy="400" r="160" fill="white">
       <animate attributeName="x" from="0" to="400" dur="5s"/>
-      <animate attributeName="y" from="10" to="10" dur="5s"
-      <animate attributeName="opacity" from="1" to="0" dur="2s"
-      id="circle-animation" begin="click"/>
+      <animate attributeName="y" from="100" to="100" dur="5s"/>
+      <animate attributeName="opacity" from="1" to="0" dur="5s"
+      id="circle-animation" begin="click" repeatcount="1"/>
   </circle>
-  <circle cx="100" cy="100" r="50" fill="white"/>
-  <animate attributeName="x" from="100" to="400" dur="5s"/>
-  <animate attributeName="opacity" from="1" to="0" dur="2s"
-  id="circle-animation" begin="click"/>
-  <
+  <circle cx="400" cy="250" r="130" fill="white">
+  <animate attributeName="x" from="100" to="1000" dur="5s"/>
+  <animate attributeName="y" from="400" to="400"/>
+  <animate attributeName="opacity" from="1" to="0" dur="5s"
+  id="circle2-animation" begin="click" repeatcount="1"/>
+</circle>
+  <circle cx="400" cy="100" r="95" fill="white">
+  <animate attributeName="x" from="100" to="1000" dur="5s"/>
+  <animate attributeName="y" from="400" to="400"/>
+  <animate attributeName="opacity" from="1" to="0" dur="5s"
+  id="circle3-animation" begin="click" repeatcount="1"/>
+</circle>
+
   </svg>
   </body>
 </html>
