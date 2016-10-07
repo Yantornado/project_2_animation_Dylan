@@ -24,7 +24,15 @@
   <animate attributeName="opacity" from="1" to="0" dur="5s"
   id="circle3-animation" begin="click" repeatcount="1"/>
 </circle>
-
-  </svg>
-  </body>
+<line x1="105" y1="175" x2="275" y2="200" stroke="brown" stroke-width="8"/>
+<line x1="25" y1="20" x2="105" y2="180" stroke="brown" stroke-width="8">
+<animate id="line1" attributeName="x1" from="25" to="225" dur="5s" begin="0s; line2.end"/>
+<animate id="line2" attributeName="x1" from="225" to="25" dur="5s" begin="line1.end"/>
+</line>
+<line x1="665" y1="320" x2="605" y2="180" stroke="brown" stroke-width="8"/>
+<line x1="525" y1="220" x2="605" y2="180" stroke="brown" stroke-width="8"/>
+<rect x="500" y="500" width="200" height="50" fill="black"/>
+<rect x="525" y="250" width="150" height="250" fill="black"/>
+</svg>
+</body>
 </html>
