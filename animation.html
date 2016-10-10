@@ -42,8 +42,14 @@
 <circle cx="410" cy="125" r="5" fill="black"/>
 <circle cx="430" cy="125" r="5" fill="black"/>
 <circle cx="450" cy="120" r="5" fill="black"/>
-<circle cx="440" cy="75" r="10" fill="black"/>
-<circle cx="360" cy="75" r="10" fill="black"/>
+<circle cx="440" cy="75" r="20" fill="lightblue"/>
+<circle cx="360" cy="75" r="20" fill="lightblue"/>
+<circle cx="445" cy="75" r="10" fill="black"/>
+<circle cx="365" cy="75" r="10" fill="black">
+<animate id="eyes" attributeName="x" from="445" to="430" dur="3s" begin="0s; eyes2.end"/>
+<animate id="eyes2" attributeName="x" from="430" to="445" dur="3s" begin="eyes.end"/>
+</circle>
+<polygon points="385 110 385 100 460 100 510 100" fill="orange"/>
 </svg>
 </body>
 </html>
