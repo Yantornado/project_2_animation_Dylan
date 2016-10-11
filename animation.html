@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1>Frosty The Snow Man <h1>
+    <p>Frosty the Snow Man is a jolly happy soul. He was made of snow, but one day he
+    came to life. The children loved him and wished he could stay forever. But one day he
+  needed to melt away.</p>
     <svg width="100%" height="100%" viewBox="0 0 1000 800">
       <circle cx="400" cy="400" r="160" fill="white">
       <animate attributeName="x" from="0" to="400" dur="5s"/>
@@ -13,7 +17,6 @@
       id="circle-animation" begin="click" repeatcount="1"/>
   </circle>
   <circle cx="400" cy="250" r="130" fill="white">
-  <animate attributeName="x" from="100" to="1000" dur="5s"/>
   <animate attributeName="y" from="400" to="400"/>
   <animate attributeName="opacity" from="1" to="0" dur="5s"
   id="circle2-animation" begin="click" repeatcount="1"/>
@@ -42,13 +45,16 @@
 <circle cx="410" cy="125" r="5" fill="black"/>
 <circle cx="430" cy="125" r="5" fill="black"/>
 <circle cx="450" cy="120" r="5" fill="black"/>
-<circle cx="440" cy="75" r="20" fill="lightblue"/>
-<circle cx="360" cy="75" r="20" fill="lightblue"/>
-<circle cx="445" cy="75" r="10" fill="black"/>
-<circle cx="365" cy="75" r="10" fill="black">
-<animate id="eyes" attributeName="x" from="445" to="430" dur="3s" begin="0s; eyes2.end"/>
-<animate id="eyes2" attributeName="x" from="430" to="445" dur="3s" begin="eyes.end"/>
+<circle cx="440" cy="75" r="20" fill="lightblue">
+<animate attributeName="fill" from="lightblue" to="lightgreen" dur="3s" id="eye" begin="0s; eye2.end"/>
+<animate attributeName="fill" from="lightgreen" to="lightblue" dur="3s" id="eye2" begin="eye.end"/>
 </circle>
+<circle cx="360" cy="75" r="20" fill="lightblue">
+<animate attributeName="fill" from="lightblue" to="lightgreen" dur="3s" id="eye" begin="0s; eye2.end"/>
+<animate attributeName="fill" from="lightgreen" to="lightblue" dur="3s" id="eye2" begin="eye.end"/>
+</circle>
+<circle cx="445" cy="75" r="10" fill="black"/>
+<circle cx="365" cy="75" r="10" fill="black"/>
 <polygon points="385 110 385 100 460 100 510 100" fill="orange"/>
 </svg>
 </body>

@@ -1,3 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Gidugu';
+
 svg{
   background: blue;
+}
+p{
+font-family: "Gidugu";
+color: green;
 }
